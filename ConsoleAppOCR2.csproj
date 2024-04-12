@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EB7BE425-A900-4A81-9800-7AECFDBD18D9}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ConsoleAppOCR2</RootNamespace>
+    <AssemblyName>ConsoleAppOCR2</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="tessdata1\.gitmodules" />
+    <None Include="tessdata1\afr.traineddata" />
+    <None Include="tessdata1\amh.traineddata" />
+    <None Include="tessdata1\ara.traineddata" />
+    <None Include="tessdata1\asm.traineddata" />
+    <None Include="tessdata1\aze.traineddata" />
+    <None Include="tessdata1\aze_cyrl.traineddata" />
+    <None Include="tessdata1\bel.traineddata" />
+    <None Include="tessdata1\ben.traineddata" />
+    <None Include="tessdata1\bod.traineddata" />
+    <None Include="tessdata1\bos.traineddata" />
+    <None Include="tessdata1\bre.traineddata" />
+    <None Include="tessdata1\bul.traineddata" />
+    <None Include="tessdata1\cat.traineddata" />
+    <None Include="tessdata1\ceb.traineddata" />
+    <None Include="tessdata1\ces.traineddata" />
+    <None Include="tessdata1\chi_sim.traineddata" />
+    <None Include="tessdata1\chi_sim_vert.traineddata" />
+    <None Include="tessdata1\chi_tra.traineddata" />
+    <None Include="tessdata1\chi_tra_vert.traineddata" />
+    <None Include="tessdata1\chr.traineddata" />
+    <None Include="tessdata1\configs" />
+    <None Include="tessdata1\cos.traineddata" />
+    <None Include="tessdata1\cym.traineddata" />
+    <None Include="tessdata1\dan.traineddata" />
+    <None Include="tessdata1\deu.traineddata" />
+    <None Include="tessdata1\deu_latf.traineddata" />
+    <None Include="tessdata1\div.traineddata" />
+    <None Include="tessdata1\dzo.traineddata" />
+    <None Include="tessdata1\ell.traineddata" />
+    <None Include="tessdata1\eng.traineddata">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="tessdata1\enm.traineddata" />
+    <None Include="tessdata1\epo.traineddata" />
+    <None Include="tessdata1\equ.traineddata" />
+    <None Include="tessdata1\est.traineddata" />
+    <None Include="tessdata1\eus.traineddata" />
+    <None Include="tessdata1\fao.traineddata" />
+    <None Include="tessdata1\fas.traineddata" />
+    <None Include="tessdata1\fil.traineddata" />
+    <None Include="tessdata1\fin.traineddata" />
+    <None Include="tessdata1\fra.traineddata" />
+    <None Include="tessdata1\frm.traineddata" />
+    <None Include="tessdata1\fry.traineddata" />
+    <None Include="tessdata1\gla.traineddata" />
+    <None Include="tessdata1\gle.traineddata" />
+    <None Include="tessdata1\glg.traineddata" />
+    <None Include="tessdata1\grc.traineddata" />
+    <None Include="tessdata1\guj.traineddata" />
+    <None Include="tessdata1\hat.traineddata" />
+    <None Include="tessdata1\heb.traineddata" />
+    <None Include="tessdata1\hin.traineddata" />
+    <None Include="tessdata1\hrv.traineddata" />
+    <None Include="tessdata1\hun.traineddata" />
+    <None Include="tessdata1\hye.traineddata" />
+    <None Include="tessdata1\iku.traineddata" />
+    <None Include="tessdata1\ind.traineddata" />
+    <None Include="tessdata1\isl.traineddata" />
+    <None Include="tessdata1\ita.traineddata" />
+    <None Include="tessdata1\ita_old.traineddata" />
+    <None Include="tessdata1\jav.traineddata" />
+    <None Include="tessdata1\jpn.traineddata" />
+    <None Include="tessdata1\jpn_vert.traineddata" />
+    <None Include="tessdata1\kan.traineddata" />
+    <None Include="tessdata1\kat.traineddata" />
+    <None Include="tessdata1\kat_old.traineddata" />
+    <None Include="tessdata1\kaz.traineddata" />
+    <None Include="tessdata1\khm.traineddata" />
+    <None Include="tessdata1\kir.traineddata" />
+    <None Include="tessdata1\kmr.traineddata" />
+    <None Include="tessdata1\kor.traineddata" />
+    <None Include="tessdata1\kor_vert.traineddata" />
+    <None Include="tessdata1\lao.traineddata" />
+    <None Include="tessdata1\lat.traineddata" />
+    <None Include="tessdata1\lav.traineddata" />
+    <None Include="tessdata1\LICENSE" />
+    <None Include="tessdata1\lit.traineddata" />
+    <None Include="tessdata1\ltz.traineddata" />
+    <None Include="tessdata1\mal.traineddata" />
+    <None Include="tessdata1\mar.traineddata" />
+    <None Include="tessdata1\mkd.traineddata" />
+    <None Include="tessdata1\mlt.traineddata" />
+    <None Include="tessdata1\mon.traineddata" />
+    <None Include="tessdata1\mri.traineddata" />
+    <None Include="tessdata1\msa.traineddata" />
+    <None Include="tessdata1\mya.traineddata" />
+    <None Include="tessdata1\nep.traineddata" />
+    <None Include="tessdata1\nld.traineddata" />
+    <None Include="tessdata1\nor.traineddata" />
+    <None Include="tessdata1\oci.traineddata" />
+    <None Include="tessdata1\ori.traineddata" />
+    <None Include="tessdata1\osd.traineddata" />
+    <None Include="tessdata1\pan.traineddata" />
+    <None Include="tessdata1\pdf.ttf" />
+    <None Include="tessdata1\pol.traineddata" />
+    <None Include="tessdata1\por.traineddata" />
+    <None Include="tessdata1\pus.traineddata" />
+    <None Include="tessdata1\que.traineddata" />
+    <None Include="tessdata1\README.md" />
+    <None Include="tessdata1\ron.traineddata" />
+    <None Include="tessdata1\rus.traineddata" />
+    <None Include="tessdata1\san.traineddata" />
+    <None Include="tessdata1\script\Arabic.traineddata" />
+    <None Include="tessdata1\script\Armenian.traineddata" />
+    <None Include="tessdata1\script\Bengali.traineddata" />
+    <None Include="tessdata1\script\Canadian_Aboriginal.traineddata" />
+    <None Include="tessdata1\script\Cherokee.traineddata" />
+    <None Include="tessdata1\script\Cyrillic.traineddata" />
+    <None Include="tessdata1\script\Devanagari.traineddata" />
+    <None Include="tessdata1\script\Ethiopic.traineddata" />
+    <None Include="tessdata1\script\Fraktur.traineddata" />
+    <None Include="tessdata1\script\Georgian.traineddata" />
+    <None Include="tessdata1\script\Greek.traineddata" />
+    <None Include="tessdata1\script\Gujarati.traineddata" />
+    <None Include="tessdata1\script\Gurmukhi.traineddata" />
+    <None Include="tessdata1\script\Hangul.traineddata" />
+    <None Include="tessdata1\script\Hangul_vert.traineddata" />
+    <None Include="tessdata1\script\HanS.traineddata" />
+    <None Include="tessdata1\script\HanS_vert.traineddata" />
+    <None Include="tessdata1\script\HanT.traineddata" />
+    <None Include="tessdata1\script\HanT_vert.traineddata" />
+    <None Include="tessdata1\script\Hebrew.traineddata" />
+    <None Include="tessdata1\script\Japanese.traineddata" />
+    <None Include="tessdata1\script\Japanese_vert.traineddata" />
+    <None Include="tessdata1\script\Kannada.traineddata" />
+    <None Include="tessdata1\script\Khmer.traineddata" />
+    <None Include="tessdata1\script\Lao.traineddata" />
+    <None Include="tessdata1\script\Latin.traineddata" />
+    <None Include="tessdata1\script\Malayalam.traineddata" />
+    <None Include="tessdata1\script\Myanmar.traineddata" />
+    <None Include="tessdata1\script\Oriya.traineddata" />
+    <None Include="tessdata1\script\Sinhala.traineddata" />
+    <None Include="tessdata1\script\Syriac.traineddata" />
+    <None Include="tessdata1\script\Tamil.traineddata" />
+    <None Include="tessdata1\script\Telugu.traineddata" />
+    <None Include="tessdata1\script\Thaana.traineddata" />
+    <None Include="tessdata1\script\Thai.traineddata" />
+    <None Include="tessdata1\script\Tibetan.traineddata" />
+    <None Include="tessdata1\script\Vietnamese.traineddata" />
+    <None Include="tessdata1\sin.traineddata" />
+    <None Include="tessdata1\slk.traineddata" />
+    <None Include="tessdata1\slv.traineddata" />
+    <None Include="tessdata1\snd.traineddata" />
+    <None Include="tessdata1\spa.traineddata" />
+    <None Include="tessdata1\spa_old.traineddata" />
+    <None Include="tessdata1\sqi.traineddata" />
+    <None Include="tessdata1\srp.traineddata" />
+    <None Include="tessdata1\srp_latn.traineddata" />
+    <None Include="tessdata1\sun.traineddata" />
+    <None Include="tessdata1\swa.traineddata" />
+    <None Include="tessdata1\swe.traineddata" />
+    <None Include="tessdata1\syr.traineddata" />
+    <None Include="tessdata1\tam.traineddata" />
+    <None Include="tessdata1\tat.traineddata" />
+    <None Include="tessdata1\tel.traineddata" />
+    <None Include="tessdata1\tgk.traineddata" />
+    <None Include="tessdata1\tha.traineddata" />
+    <None Include="tessdata1\tir.traineddata" />
+    <None Include="tessdata1\ton.traineddata" />
+    <None Include="tessdata1\tur.traineddata" />
+    <None Include="tessdata1\uig.traineddata" />
+    <None Include="tessdata1\ukr.traineddata" />
+    <None Include="tessdata1\urd.traineddata" />
+    <None Include="tessdata1\uzb.traineddata" />
+    <None Include="tessdata1\uzb_cyrl.traineddata" />
+    <None Include="tessdata1\vie.traineddata" />
+    <None Include="tessdata1\yid.traineddata" />
+    <None Include="tessdata1\yor.traineddata" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AForge.Imaging">
+      <Version>2.2.5</Version>
+    </PackageReference>
+    <PackageReference Include="System.Drawing.Common">
+      <Version>8.0.4</Version>
+    </PackageReference>
+    <PackageReference Include="Tesseract">
+      <Version>5.2.0</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="tessdata1\tessconfigs\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="cheq.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="cheq2.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="cheque.jpeg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="cheque.png" />
+    <Content Include="cheque3.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="powerapps2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
